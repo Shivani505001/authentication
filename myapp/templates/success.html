@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Success</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            width: 80%;
+            max-width: 400px;
+        }
+
+        h2 {
+            color: white;
+            font-size: 24px;
+            margin: 0;
+            padding-top: 20px;
+        }
+
+        p {
+            color: white;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ user.name }}</h2>
+        <p>You have successfully logged in!</p>
+        <a href="{% url 'logout' %}">Logout</a>
+
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* This makes the content fill the entire viewport height */
+        }
+
+        h1 {
+            color: white;
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 10px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            background: linear-gradient(to bottom, #74ebd5, #acb6e5);
+            width : 300px;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>HOME</h1>
+        <a href="{% url 'register' %}">Register</a>
+        <a href="{% url 'login' %}">Login</a>
+        
+    </div>
+</body>
+</html>
